@@ -1,4 +1,165 @@
 <head>
   <meta charset="utf-8">
-  <title>COMP_SCI 396, 496: Statistical Machine Learning</title> 
+  <title>COMP_SCI 396, 496: Statistical Machine Learning</title>
+  <script src="plugins/main.js"></script>
+  <script src="events.js?v=1"></script>
 </head>
+<body onload="eventsOnLoad(); fixScrollPosition()">
+
+<style>
+.cas {
+  font-size: 6pt;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.cas table {
+  width: 120%;
+}
+
+.cas td > div {
+  float: left;
+  min-width: 180px;
+  margin-bottom: 24px;
+}
+
+/* Temporary: for screenshotting to make teaching staff names all the same color regardless of links */
+/*a { color: black; }*/
+
+.cas img {
+object-fit: cover;
+border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.staff img {
+object-fit: cover;
+border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+}
+
+.photos {
+  margin: auto;
+  text-align: center;
+}
+
+.photos_staff {
+  margin: auto;
+  text-align: center;
+}
+</style>
+
+<div class="section">
+  <div style="float:left; clear:left">
+    <img width="90" src="Northwestern_purple_RGB.png"/>
+  </div>
+  <div style="margin-left: 30; margin-top: 20">
+    <div class="top assignmentTitle">
+      COMP_SCI 396, 496: Statistical Machine Learning
+    </div>
+    <div class="top nav">
+    Northwestern / Winter 2019-2020
+    </div>
+    <div class="top">
+      <!--
+      <a class="nav" href="https://calendar.google.com/calendar/embed?src=v5s92jlmd4u5mo741l73hkr9ek%40group.calendar.google.com&ctz=America%2FLos_Angeles">[Calendar]</a>
+      &nbsp;
+      -->
+      <a class="nav" href="#coursework">[Coursework]</a>
+      &nbsp;
+      <a class="nav" href="#schedule">[Schedule]</a>
+    </div>
+  </div>
+</div>
+<br/>
+<!-- 
+<div class="section">
+  <span class="header">Under construction!</span>
+</div>
+-->
+<div class="section">
+  <span class="header">Logistics</span>
+
+  <div class="section"><b>Time/location:</b>
+    <ul>
+      <li>Lectures: Tuesday 6:00-9:00pm in Technological Institute L221 </li>
+      
+      <li>Office hours: TBD.</li>
+    </ul>
+  </div>
+  <div class="section"><b>Communication:</b>
+    We will use <a href="https://piazza.com">Piazza</a> for all communications:
+    announcements and questions related to lectures, assignments, and projects.
+    
+  </div>
+
+  <div class="section"><b>GRADING:</b>:
+    TBD.
+  </div>
+
+  <div class="section">
+    <b>Instructors:</b>
+    <div class="staff" style="width: 50%; margin-right: 25%; margin-left: 25%">
+      <div class="cas">
+          <table>
+            <tr>
+              <td>
+                <div class="photos_staff"><div><img src="photos/liu-han.jpg" alt="Han"></div><div><br/><a href="http://magics.cs.northwestern.edu/people.html">Han Liu</a></div></div>
+                
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <b>Course assistants:</b>
+  </div>
+  <div class="cas">
+      <table>
+        <tr>
+          <td>
+            <div class="photos"><div><img src="photos/nuseal.png" alt="NU"></div><div><br/><a href="http://magics.cs.northwestern.edu/index.html">TBD</a> </div></div>
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</div>
+
+<div class="section">
+  <a name="content"><span class="header">Content</span></a>
+
+  <div class="section"><b>What is this course about?</b>
+    This course introduces statical machine learning methods from a theoretical perspective. Topics include the maximum likelihood inference, regularization principle, risk minimization framework, cross-validation, high dimensional inference and nonparametric methods. 
+  </div>
+
+  <div class="section"><b>Prerequisites:</b>
+    <a href="https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/214.html">COMP_SCI 214: Data Structures and Data Management</a>
+  </div>
+
+  <div class="section"><b>Reading:</b>
+    There is no required textbook for this class, and you should be able to
+    learn everything from the lecture notes and homeworks.
+  
+  </div>
+</div>
+
+<div class="section">
+  <a name="coursework"><span class="header">Coursework</span></a>
+</div>
+
+<div class="section">
+  <a name="schedule"><span class="header">Schedule</span></a>
+  <div id="schedule"></div>
+</div>
+</body>
